@@ -5,3 +5,7 @@ get '/' do
   get '/secret' do
     'This is a secret page'
   end
+
+  get '/cat' do 
+  
+end 
