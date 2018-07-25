@@ -1,4 +1,11 @@
-<h1> hi   <%= @name %> </h1>
+<form action = "/named_cat">
+  <input type = "text" name = "name">
+  <input type = "submit" value = "Press here to name our lovely cat">
+  </form>
+
 <div style= 'border: 3px dashed red'>
     <img src='http://bit.ly/1eze8aE'>
   </div>
+  <% if @name %> 
+  <h1>My name is <%= @name %></h1>
+<% end %>
