@@ -7,7 +7,10 @@ get '/' do
   end
 
   get '/cat' do 
-    erb(:index)
+    @name = ["Amigo", "Oscar", "Viking"].sample
+    erb :index
+
+
 end 
 
 #https://github.com/makersacademy/course/blob/master/intro_to_the_web/sinatra_returning_html.md
